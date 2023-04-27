@@ -1,0 +1,19 @@
+# copy this file to /etc/systemd/system/
+# $ sudo cp ro-dou-startup.service /etc/systemd/system/
+# then enable the service to start on boot
+# $ sudo systemctl daemon-reload
+# $ sudo systemctl enable ro-dou-startup.service
+# Start the service
+# $ sudo systemctl start ro-dou-startup.service
+
+[Unit]
+Description=ro dou startup
+
+[Service]
+User=ro-dou
+Group=ro-dou
+Type=simple
+ExecStart=/home/ro-dou/ro-dou-jobs/sh/ro-dou-startup.sh
+
+[Install]
+WantedBy=multi-user.target

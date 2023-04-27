@@ -1,0 +1,20 @@
+# copy this file to /etc/systemd/system/
+# $ sudo cp ro-dou-shutdown.service /etc/systemd/system/
+# then enable the service to start on shutdown
+# $ sudo systemctl daemon-reload
+# $ sudo systemctl enable ro-dou-shutdown.service
+
+[Unit]
+Description=ro dou shutdown
+DefaultDependencies=no
+Before=shutdown.target reboot.target halt.target
+
+[Service]
+User=ro-dou
+Group=ro-dou
+Type=oneshot
+ExecStart=/home/ro-dou/ro-dou-jobs/sh/ro-dou-shutdown.sh
+
+[Install]
+WantedBy=shutdown.target reboot.target halt.target
+
