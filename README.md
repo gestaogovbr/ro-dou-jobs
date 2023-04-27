@@ -20,13 +20,13 @@ To create a Ro-Dou service (with [Apache Airflow](https://airflow.apache.org/)),
 sudo journalctl -u ro-dou-startup.service
 ```
 
-* To check Airflow/Ro-Dou sercices run
+* To check `Airflow`/`Ro-Dou` services run
 
 ```shell
 docker ps
 ```
 
-* To check `airflow-webserver` services run
+* To check `airflow-webserver` service run
 
 ```shell
 docker logs -f airflow-webserver
