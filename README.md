@@ -1,7 +1,5 @@
 # ro-dou-jobs
 
-Uses Airflow, FastETL and Ro-dou to send Brazil government journal clipping.
-
 Uses [Apache Airflow](https://airflow.apache.org/), [FastETL](https://github.com/economiagovbr/fastETL) and [Ro-dou](https://github.com/economiagovbr/ro-dou) to send Brazil government journal clipping.
 
 * [Diário Oficial da União](https://www.in.gov.br/servicos/diario-oficial-da-uniao)
