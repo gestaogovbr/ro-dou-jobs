@@ -1,4 +1,4 @@
-FROM ghcr.io/economiagovbr/ro-dou:latest
+FROM ghcr.io/gestaogovbr/ro-dou:latest
 
 USER root
 

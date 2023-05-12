@@ -1,7 +1,7 @@
 version: '3'
 x-airflow-common:
   &airflow-common
-  image: ghcr.io/economiagovbr/ro-dou-jobs:latest
+  image: ghcr.io/gestaogovbr/ro-dou-jobs:latest
   user: "1000"
   environment:
     &airflow-common-env
